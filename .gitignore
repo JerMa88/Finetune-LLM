@@ -1,0 +1,12 @@
+.ipynb_checkpoints
+__pycache__
+*.pyc
+
+*.DS_Store
+.venv
+
+# Too big to be tracked by github: Elon_FT.ipynb should download these folders.
+wandb/
+outputs/
+models/
+datasets/
