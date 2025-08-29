@@ -2,7 +2,7 @@
 
 This repository provides a comprehensive guide on how to finetune large language models (LLMs) using Parameter-Efficient Fine-Tuning (PEFT) techniques with the Hugging Face Transformers library. It includes step-by-step instructions, code examples, and best practices for adapting pre-trained models to your specific datasets.
 
-** Credits: This repository is mostly programmed by [Gabriel Mongaras](https://github.com/gmongaras). Adapted for SMU SuperPOD by [Jerry Ma](https://github.com/jerma88).**
+**Credits: This repository is mostly programmed by [Gabriel Mongaras](https://github.com/gmongaras). Adapted for SMU SuperPOD by [Jerry Ma](https://github.com/jerma88).**
 
 ## Tutorial
 
@@ -12,7 +12,7 @@ This repository provides a comprehensive guide on how to finetune large language
    ssh -C -D <port> <your_smu_id>@superpod.smu.edu
    ```
 2. set up proxy on your browser 
-    - (For Firefox) Preferences > Network Settings > Settings > Manual proxy configuration > SOCKS Host: localhost, Port: <port> (same as above) > SOCKS v5 > Proxy DNS when using SOCKS v5
+    - **(For Firefox)** Preferences > Network Settings > Settings > Manual proxy configuration > SOCKS Host: localhost, Port: <port> (same as above) > SOCKS v5 > Proxy DNS when using SOCKS v5
 
 ### Training Setup
 3. git clone this repo
@@ -45,7 +45,7 @@ You should see something like this in your terminal:
     [I 2025-08-26 23:08:36.164 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 ```
 
-Copy *http://bcm-dgxa100-00<node_id>:8888/lab* and paste it in your browser that you configured proxy for. You should now be able to access jupyter lab running on SuperPOD.
+Copy `http://bcm-dgxa100-00<node_id>:8888/lab` and paste it in your browser that you configured proxy for. You should now be able to access jupyter lab running on SuperPOD.
 
 7. open `finetune_peft_transformers.ipynb` and follow the steps in the notebook to finetune a LLM on your custom dataset!
 
@@ -64,10 +64,10 @@ Copy *http://bcm-dgxa100-00<node_id>:8888/lab* and paste it in your browser that
     you should see something like this in your terminal:
     ```bash
       You can now view your Streamlit app in your browser.
-
-  Local URL: http://localhost:8501
-  Network URL: http://10.211.48.17:8501
-  External URL: http://129.119.55.211:8501
+    
+      Local URL: http://localhost:8501
+      Network URL: http://10.211.48.17:8501
+      External URL: http://129.119.55.211:8501
     ```
 
 10. copy *Network URL* and paste it in a new tab in the browser that you configured proxy for. You should now be able to access the inference app running on SuperPOD.
